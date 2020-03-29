@@ -18,11 +18,31 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
 
-  - job_name: workshop_node # whitebox monitoring
+  - job_name: CentOS1
     metrics_path: '/metrics'
     static_configs:
       - targets: [
-        '<ip_address>:8080'
+        '192.168.56.101:9100'
+      ]
+  - job_name: CentOS2
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: [
+        '192.168.56.102:9100'
+      ]
+
+  - job_name: CentOS3
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: [
+        '192.168.56.103:9100'
+      ]
+
+  - job_name: CentOS4
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: [
+        '192.168.56.104:9100'
       ]
 
   - job_name: 'blackbox' # blackbox monitoring
