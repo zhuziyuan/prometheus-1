@@ -14,40 +14,40 @@ rule_files:
 scrape_configs:
 
   - job_name: prometheus
-    metrics_path: '/metrics'
+    scrape_interval: 5s
     static_configs:
       - targets: ['localhost:9090']
 
-    - job_name: CentOS
-    metrics_path: '/metrics'
+    - job_name: CentOS-0
+    scrape_interval: 5s
     static_configs:
       - targets: [
         '192.168.56.100:9100'
       ]
 
-  - job_name: CentOS1
-    metrics_path: '/metrics'
+  - job_name: CentOS-1
+    scrape_interval: 5s
     static_configs:
       - targets: [
         '192.168.56.101:9100'
       ]
 
-  - job_name: CentOS2
-    metrics_path: '/metrics'
+  - job_name: CentOS-2
+    scrape_interval: 5s
     static_configs:
       - targets: [
         '192.168.56.102:9100'
       ]
 
-  - job_name: CentOS3
-    metrics_path: '/metrics'
+  - job_name: CentOS-3
+    scrape_interval: 5s
     static_configs:
       - targets: [
         '192.168.56.103:9100'
       ]
 
-  - job_name: CentOS4
-    metrics_path: '/metrics'
+  - job_name: CentOS-4
+    scrape_interval: 5s
     static_configs:
       - targets: [
         '192.168.56.104:9100'
