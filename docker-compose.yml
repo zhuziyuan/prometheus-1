@@ -57,3 +57,16 @@ services:
     command:
       - '--config.file=/config/blackbox.yml'
     restart: always
+    
+  ping_exporter:
+    container_name: ping_exporter
+    image: czerwonk/ping_exporter
+    volumes:
+      - ./config/:/config/
+    environment:
+      - CONFIG_FILE=/config/config.yml
+
+    ports:
+      - 9427:9427
+    restart: always
+
