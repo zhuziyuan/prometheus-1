@@ -62,7 +62,7 @@ services:
     container_name: ping_exporter
     image: czerwonk/ping_exporter
     volumes:
-      - ./config/:/config/
+      - ./ping_exporter/config/:/config/
     environment:
       - CONFIG_FILE=/config/ping_exporter.yml
     ports:
@@ -72,7 +72,7 @@ services:
   snmp:
     image: quay.io/prometheus/snmp-exporter
     volumes:
-      - /opt/docker-persist/snmp-exporter:/etc/snmp_exporter
+      - ./snmp_exporter/config/:/etc/snmp_exporter
     ports:
       - 9116:9116
       - 116:116/udp
