@@ -39,5 +39,3 @@
 ![blackbox](./images/blackbox.png)
 
 - Các bạn dựng sẵn những ứng dụng trên để chuẩn bị cho workshop, mình sẽ hướng dẫn cấu hình thêm rules, alert, dashboard, ... trong buổi workshop ngày **23/08/2019**
-
-## Hẹn gặp các bạn ngày 23/08/2019 ở Sihub nhé
