@@ -65,7 +65,6 @@ services:
       - ./config/:/config/
     environment:
       - CONFIG_FILE=/config/config.yml
-
     ports:
       - 9427:9427
     restart: always
