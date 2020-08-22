@@ -64,7 +64,7 @@ services:
     volumes:
       - ./config/:/config/
     environment:
-      - CONFIG_FILE=/config/config.yml
+      - CONFIG_FILE=/config/ping_exporter.yml
     ports:
       - 9427:9427
     restart: always
